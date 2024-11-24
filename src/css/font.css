@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../font/BMWTypeNextLatin-Light.otf') format('opentype');
+
+}
+
+body {
+  font-family: 'MyCustomFont', sans-serif;
+}
