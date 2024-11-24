@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font.css">
+    <title>Configure o seu</title>
+</head>
+
+<body>
+    <section class="flex flex-col  bg-cover bg-center">
+        <div class="z-10 flex justify-center flex-col items-center">
+            <header class="border-b-[1.5px] border-black container flex justify-between items-center py-4">
+                <div class="flex items-center gap-6">
+                    <a href="./index.html"><img src="./assets/logo-2.SVG" alt="Logo BMW" class="w-16 h-auto"></a>
+                    <nav>
+                        <ul class="flex gap-6 text-lg font-bold">
+                            <li class="hover:scale-110"><a href="#">Modelos</a></li>
+                            <li class="hover:scale-110"><a href="./configure_o_seu.html" target="_blank">Configure o
+                                    seu</a></li>
+                            <li class="hover:scale-110"><a href="#">Compra Online</a></li>
+                            <li class="hover:scale-110"><a href="#">Descubra o BMW</a></li>
+                            <li class="hover:scale-110"><a target="_blank" href="./faq.html">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <ul class="flex gap-6 text-2xl">
+                    <li><i class="ph ph-user"></i></li>
+                    <li><i class="ph ph-shopping-cart-simple"></i></li>
+                    <li><i class="ph ph-map-pin"></i></li>
+                    <li><i class="ph ph-magnifying-glass"></i></li>
+                </ul>
+            </header>
+
+            <div class="mt-32 border-b-[1.5px] border-gray-300">
+                <section class="flex gap-4 flex-col mr-130">
+                    <h3 class="text-4xl">BMW Configurador</h3>
+                    <h1 class="text-2xl">FILTRO</h1>
+                    <div class="flex gap-4">
+                        <button
+                            class="border-[1px] border-black p-2 font-bold bg-white text-black hover:bg-black hover:text-whitetransition duration-300 ease-in-out"><i class="ph ph-plus"></i> Plug-In Híbrido
+                        </button>
+                        <button
+                            class="border-[1px] border-black p-2 font-bold bg-white text-black hover:bg-black hover:text-whitetransition duration-300 ease-in-out"><i class="ph ph-plus"></i> Eletrico
+                        </button>
+                    </div>
+
+                    <p class="font-bold"><i class="ph-bold ph-greater-than"></i> Mostrar mais filtros</p>
+                    <p><span class="underline underline-offset-1">17</span> Veículos enocntrados</p>
+
+                    <ul class="ml-4 text-gray-600 flex gap-4 font-bold text-xl mb-10">
+                        <li class="hover:text-black"><a href="">X</a></li>
+                        <li class="hover:text-black"><a href="">M</a></li>
+                        <li class="hover:text-black"><a href="">5</a></li>
+                        <li class="hover:text-black"><a href="">2</a></li>
+                        <li class="hover:text-black"><a href="">1</a></li>
+                        <li class="hover:text-black"><a href="">Plug-In Híbrido</a></li>
+                    </ul>
+                </section>
+            </div>
+    </section>
+
+    <div class="container mx-auto flex gap-24 items-start py-4 w-full">
+        <div class="cursor-pointer">
+            <img class="w-64 h-auto hover:scale-110" src="./assets/carro-5.png">
+            <h3 class="font-normal">BMW X6 M Competition</h3>
+            <span class="font-thin text-gray-500 text-base">Gasolina</span>
+            <p class="font-bold">A partir de R$1.847.950 à vista.* <i class="ph ph-info"></i></p>
+        </div>
+
+        <div class="cursor-pointer">
+            <img class="hover:scale-110 w-64 h-auto" src="./assets/carro-6.png">
+            <h3 class="font-normal">BMW X5</h3>
+            <span class="font-thin text-gray-500 text-base">Gasolina</span>
+            <p class="font-bold">A partir de R$847.950 à vista.* <i class="ph ph-info"></i></p>
+        </div>
+
+        <div class="cursor-pointer">
+            <img class="hover:scale-110 w-64 h-auto" src="./assets/carro-7.png">
+            <h3 class="font-normal">BMW X4</h3>
+            <span class="font-thin text-gray-500 text-base">Gasolina</span>
+            <p class="font-bold">A partir de R$847.950 à vista.* <i class="ph ph-info"></i></p>
+        </div>
+
+        <div class="cursor-pointer">
+            <img class="hover:scale-110 w-64 h-auto" src="./assets/carro-4.png">
+            <h3 class="font-normal">BMW X6</h3>
+            <span class="font-thin text-gray-500 text-base">Gasolina</span>
+            <p class="font-bold">A partir de R$847.950 à vista.* <i class="ph ph-info"></i></p>
+        </div>
+    </div>
+
+    <div class="container mx-auto flex gap-24 items-start py-4 w-full">
+        <div class="cursor-pointer" onclick="openModal()">
+            <img class="w-64 h-auto hover:scale-110 transition-transform" src="./assets/carro-4.png" alt="Carro">
+            <h3 class="font-normal">BMW X6 M Competition</h3>
+            <span class="font-thin text-gray-500 text-base">Gasolina</span>
+            <p class="font-bold">A partir de R$1.847.950 à vista.* <i class="ph ph-info"></i></p>
+        </div>
+
+        <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center">
+            <div class="bg-white max-w-6xl mx-auto shadow-lg rounded-lg p-6 relative">
+                <button class="absolute top-2 right-[10px] text-gray-500 hover:text-gray-700 text-[30px]"
+                    onclick="closeModal()">&times;</button>
+                <div class="max-w-6xl mx-auto bg-white">
+                    <div class="flex items-center justify-between">
+                        <h1 class="text-2xl font-semibold text-gray-800">BMW X6 M Competition</h1>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row mt-6">
+                        <div class="lg:w-1/2">
+                            <img src="./assets/carro-4.png" alt="BMW X6 M Competition"
+                                class="w-full rounded-lg shadow-lg">
+                        </div>
+
+                        <div class="lg:w-1/2 lg:ml-8 mt-6 lg:mt-0 flex gap-10">
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-700">Motor</h2>
+                                <p class="text-gray-600 mt-1">330i</p>
+                                <ul class="text-sm text-gray-600 space-y-1 mt-2">
+                                    <li><strong>Combustível:</strong> Gasolina</li>
+                                    <li><strong>Potência:</strong> 190 kW (258 PS)</li>
+                                    <li><strong>Consumo:</strong> 6.4/100 km</li>
+                                    <li><strong>Aceleração:</strong> 5.5 s</li>
+                                    <li><strong>Tração:</strong> Traseira</li>
+                                    <li><strong>Transmissão:</strong> Automática</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h2 class="text-lg font-semibold text-gray-700">Configuração</h2>
+                                <p class="text-gray-600 mt-1">Modelo M Sport</p>
+                                <ul class="text-sm text-gray-600 space-y-1 mt-2">
+                                    <li>Suspensão e freios M Sport</li>
+                                    <li>Câmeras de estacionamento</li>
+                                    <li>Rodas de 18"</li>
+                                    <li>Interior M Sport</li>
+                                    <li>Faróis Full LED</li>
+                                    <li>Pacote aerodinâmico</li>
+                                    <li>Transmissão esportiva</li>
+                                    <li>BMW Individual</li>
+                                    <li>Assistente de estacionamento</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 flex items-center justify-between border-t pt-4">
+                        <p class="text-xl font-semibold text-gray-800">Preço: R$ 1.847.950</p>
+                        <button class="px-6 py-3 bg-blue-600 text-white text-lg font-medium hover:bg-blue-700">
+                            Próxima etapa
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cursor-pointer">
+            <img class="hover:scale-110 w-64 h-auto" src="./assets/carro-5.png">
+            <h3 class="font-normal">BMW X5</h3>
+            <span class="font-thin text-gray-500 text-base">Gasolina</span>
+            <p class="font-bold">A partir de R$847.950 à vista.* <i class="ph ph-info"></i></p>
+        </div>
+
+        <div class="cursor-pointer">
+            <img class="hover:scale-110 w-64 h-auto" src="./assets/carro-6.png">
+            <h3 class="font-normal">BMW X4</h3>
+            <span class="font-thin text-gray-500 text-base">Gasolina</span>
+            <p class="font-bold">A partir de R$847.950 à vista.* <i class="ph ph-info"></i></p>
+        </div>
+
+        <div class="cursor-pointer">
+            <img class="hover:scale-110 w-64 h-auto" src="./assets/carro-7.png">
+            <h3 class="font-normal">BMW X6</h3>
+            <span class="font-thin text-gray-500 text-base">Gasolina</span>
+            <p class="font-bold">A partir de R$847.950 à vista.* <i class="ph ph-info"></i></p>
+        </div>
+    </div>
+
+    <section class="text-black flex gap-32 px-[420px] flex-col justify-center items-start h-[500px]">
+        <div class="flex gap-64 items-start justify-center">
+            <div class="flex flex-col gap-2">
+                <h3 class="text-sm">Contato</h3>
+                <ul class="font-bold flex flex-col gap-4">
+                    <li><a href="#">Fale com a BMW</a></li>
+                    <li><a href="#">Correios</a></li>
+                    <li><a href="#">Visita à Fábrica</a></li>
+                    <li><a href="#">Relatório de transparência salarial</a></li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <h3 class="text-sm">Meu BMW</h3>
+                <ul class="font-bold flex flex-col gap-4">
+                    <li><a href="#">Solicite uma proposta</a></li>
+                    <li><a href="#">Modelos e Preços</a></li>
+                    <li><a href="#">Simule seu Financiamento</a></li>
+                    <li><a href="#">Consórcio</a></li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <h3 class="text-sm">BMW ConnectedDrive</h3>
+                <ul class="font-bold flex flex-col gap-4">
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="flex gap-4 text-2xl font-bold">
+            <li><i class="ph ph-facebook-logo"></i></li>
+            <li><i class="ph ph-instagram-logo"></i></li>
+            <li><i class="ph ph-youtube-logo"></i></li>
+            <li><i class="ph ph-linkedin-logo"></i></li>
+            <li><i class="ph ph-x-logo"></i></li>
+            <li><i class="ph ph-tiktok-logo"></i></li>
+            <li><i class="ph ph-whatsapp-logo"></i></li>
+        </ul>
+    </section>
+
+    <footer class="bg-white py-4 px-8">
+        <div class="flex justify-between px-[400px] items-center text-sm text-gray-700">
+            <p class="text-xl">&copy; BMW AG 2024</p>
+            <nav class="space-x-6 font-bold">
+                <a href="#">Política de Cookies</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Disponibilidade de Produtos</a>
+                <a href="#">Recall</a>
+                <a href="#">Manual de Segurança</a>
+                <a href="#">Informações Legais</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

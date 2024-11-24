@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htm lang="en">
+<htm lang="pt-BR">
 
     <head>
         <meta charset="UTF-8">
@@ -10,30 +10,30 @@
     </head>
 
     <body class="text-white">
-        <section class="relative flex flex-col min-h-screen bg-cover bg-center"
+        <section class="flex flex-col min-h-screen bg-cover bg-center"
             style="background-image: url('./assets/carro-home.png');">
 
-            <div class="relative z-10 flex justify-center flex-col items-center">
-                <header class="container flex justify-between items-center py-6 px-16">
+            <div class="z-10 flex justify-center flex-col items-center">
+                <header class="border-b-[1.5px] border-white container flex justify-between items-center py-4"> 
                     <div class="flex items-center gap-6">
                         <img src="./assets/logo.png" alt="Logo BMW" class="w-16 h-auto">
 
-                        <nav>
+                        <nav class="cursor-pointer">
                             <ul class="flex gap-6 text-lg font-bold">
-                                <li><a href="#" class="">Modelos</a></li>
-                                <li><a href="#" class="">Configure o seu</a></li>
-                                <li><a href="#" class="">Compra Online</a></li>
-                                <li><a href="#" class="">Descubra o BMW</a></li>
-                                <li><a href="#" class="">Recall</a></li>
+                                <li class="hover:scale-110"><a href="#">Modelos</a></li>
+                                <li class="hover:scale-110"><a href="./configure_o_seu.html" target="_blank">Configure o seu</a></li>
+                                <li class="hover:scale-110"><a href="#">Compra Online</a></li>
+                                <li class="hover:scale-110"><a href="#">Descubra o BMW</a></li>
+                                <li class="hover:scale-110"><a target="_blank" href="./faq.html">FAQ</a></li>
                             </ul>
                         </nav>
                     </div>
 
-                    <ul class="flex gap-6 text-2xl">
-                        <li><i class="ph ph-user"></i></li>
-                        <li><i class="ph ph-shopping-cart-simple"></i></li>
-                        <li><i class="ph ph-map-pin"></i></li>
-                        <li><i class="ph ph-magnifying-glass"></i></li>
+                    <ul class="flex gap-6 text-2xl cursor-pointer">
+                        <li class="hover:scale-110"><i class="ph ph-user"></i></li>
+                        <li class="hover:scale-110"><i class="ph ph-shopping-cart-simple"></i></li>
+                        <li class="hover:scale-110"><i class="ph ph-map-pin"></i></li>
+                        <li class="hover:scale-110"><i class="ph ph-magnifying-glass"></i></li>
                     </ul>
                 </header>
 
@@ -47,7 +47,7 @@
                             <p class="text-xl">O BMW M4 CS.</p>
                         </div>
 
-                        <button class="bg-blue-600 h-10 w-64 mt-12">
+                        <button class="bg-blue-600 h-10 w-64 mt-12 hover:scale-110 transition duration-300 ease-in-out">
                             Saiba mais
                         </button>
                     </section>
@@ -61,39 +61,22 @@
                 <article class="flex flex-col items-center justify-center gap-6">
                     <i class="ph ph-car-simple text-6xl"></i>
                     <h3 class="text-xl">Econtre um 0 KM.</h3>
-                    <button
-                        class="border-[1px] border-black p-4 font-bold bg-white text-black hover:bg-black hover:text-white transition duration-300 ease-in-out">Pesquisar</button>
+                    <button class="border-[1px] border-black p-4 font-bold bg-white text-black hover:bg-black hover:text-white transition duration-300 ease-in-out">Pesquisar</button>
                 </article>
 
                 <article class="flex flex-col items-center justify-center gap-6">
                     <i class="ph ph-car-simple text-6xl"></i>
                     <h3 class="text-xl">Econtre um seminovo.</h3>
-                    <button
-                        class="border-[1px] border-black p-4 font-bold bg-white text-black hover:bg-black hover:text-white transition duration-300 ease-in-out">Pesquisar</button>
+                    <button class="border-[1px] border-black p-4 font-bold bg-white text-black hover:bg-black hover:text-white transition duration-300 ease-in-out">Pesquisar</button>
                 </article>
 
                 <article class="flex flex-col items-center justify-center gap-6">
                     <i class="ph ph-car-simple text-6xl"></i>
                     <h3 class="text-xl">Configure o seu.</h3>
-                    <button
-                        class="border-[1px] border-black p-4 font-bold bg-white text-black hover:bg-black hover:text-white transition duration-300 ease-in-out">Configurar
-                        o preço</button>
+                    <button class="border-[1px] border-black p-4 font-bold bg-white text-black hover:bg-black hover:text-white transition duration-300 ease-in-out">Configurar o preço</button>
                 </article>
             </div>
         </section>
-
-        <!-- <section class="text-white h-screen text-black bg-gray-700">
-            <article class="p-4 flex flex-col gap-4">
-                <h2>BMW i4 M50</h2>
-                <p class="max-w-96">Taxa 0% a.m. para planos com 50% de entrada             
-                e saldo em 36 meses + 1 ano de seguro auto gratuito,
-                subsidiado pela montadora.
-                Consulte condições*.</p>
-                <button
-                    class="border-[1px] w-64 border-white p-4 font-bold text-white hover:bg-white hover:text-black transition duration-300 ease-in-out">Configurar
-                    o preço</button>
-            </article>
-        </section> -->
 
         <section class="px-72 flex flex-col gap-6">
 
@@ -151,40 +134,40 @@
                 <div class="flex flex-col gap-2">
                     <h3 class="text-sm">Contato</h3>
                     <ul class="font-bold flex flex-col gap-4">
-                        <li><a href="#">Fale com a BMW</a></li>
-                        <li><a href="#">Correios</a></li>
-                        <li><a href="#">Visita à Fábrica</a></li>
-                        <li><a href="#">Relatório de transparência salarial</a></li>
+                        <li class="hover:scale-110"><a href="#">Fale com a BMW</a></li>
+                        <li class="hover:scale-110"><a href="#">Correios</a></li>
+                        <li class="hover:scale-110"><a href="#">Visita à Fábrica</a></li>
+                        <li class="hover:scale-110"><a href="#">Relatório de transparência salarial</a></li>
                     </ul>
                 </div>
 
                 <div class="flex flex-col gap-2">
                     <h3 class="text-sm">Meu BMW</h3>
                     <ul class="font-bold flex flex-col gap-4">
-                        <li><a href="#">Solicite uma proposta</a></li>
-                        <li><a href="#">Modelos e Preços</a></li>
-                        <li><a href="#">Simule seu Financiamento</a></li>
-                        <li><a href="#">Consórcio</a></li>
+                        <li class="hover:scale-110"><a href="#">Solicite uma proposta</a></li>
+                        <li class="hover:scale-110"><a href="#">Modelos e Preços</a></li>
+                        <li class="hover:scale-110"><a href="#">Simule seu Financiamento</a></li>
+                        <li class="hover:scale-110"><a href="#">Consórcio</a></li>
                     </ul>
                 </div>
 
                 <div class="flex flex-col gap-2">
                     <h3 class="text-sm">BMW ConnectedDrive</h3>
                     <ul class="font-bold flex flex-col gap-4">
-                        <li><a href="#">Fale conosco</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li class="hover:scale-110"><a href="#">Fale conosco</a></li>
+                        <li class="hover:scale-110"><a href="./faq.html">FAQ</a></li>
                     </ul>
                 </div>
             </div>
 
             <ul class="flex gap-4 text-2xl font-bold">
-                <li><i class="ph ph-facebook-logo"></i></li>
-                <li><i class="ph ph-instagram-logo"></i></li>
-                <li><i class="ph ph-youtube-logo"></i></li>
-                <li><i class="ph ph-linkedin-logo"></i></li>
-                <li><i class="ph ph-x-logo"></i></li>
-                <li><i class="ph ph-tiktok-logo"></i></li>
-                <li><i class="ph ph-whatsapp-logo"></i></li>
+                <li class="hover:scale-110"><i class="ph ph-facebook-logo"></i></li>
+                <li class="hover:scale-110"><i class="ph ph-instagram-logo"></i></li>
+                <li class="hover:scale-110"><i class="ph ph-youtube-logo"></i></li>
+                <li class="hover:scale-110"><i class="ph ph-linkedin-logo"></i></li>
+                <li class="hover:scale-110"><i class="ph ph-x-logo"></i></li>
+                <li class="hover:scale-110"><i class="ph ph-tiktok-logo"></i></li>
+                <li class="hover:scale-110"><i class="ph ph-whatsapp-logo"></i></li>
             </ul>
         </section>
 
